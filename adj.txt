@@ -1,0 +1,17 @@
+tilable
+ambient
+direct
+global
+precomputed
+tessellated
+subdivided
+implicit
+efficient
+hardware-accelerated
+geometric
+dynamic
+intersecting
+buffered
+perspective-correct
+homogeneous 
+multidimensional

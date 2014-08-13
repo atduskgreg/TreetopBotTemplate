@@ -1,0 +1,21 @@
+grammar PosTemplate
+	rule sentence
+		(tag / word / space / other)* <Sentence>
+	end
+
+	rule tag
+		'<'  word  ':'  word  '>' <TemplateTag>
+	end
+
+	rule word
+		[\w\-\']+ <Word>
+	end
+
+  	rule space
+    	[\s]+
+  	end
+
+  	rule other
+  		[^<>\s\w]+ <Other>
+  	end
+end
