@@ -25,3 +25,7 @@ In code, then, the goal is to parse this format and return a structure that make
 And this is exactly what I've implemented here. The three files relevant to parsing are parser.rb (a helper class), node_extensions.rb (some node class sub-types with simple methods on them), and postemplate_parser.treetop (the grammar). parser.rb has the ruby code that calls Treetop with the other two files in order to produce a parser. You can see that parser in action in generate.rb which uses the results of parsing to generate new sentences.
 
 Anyway, this is not generating the coolest ever text right now because it's a work-in-progress. But it is an example of how to use Treetop for something basic, but useful that's not parsing Lisp like all the examples show.
+
+### Treetop Gotcha
+
+The biggest gotcha on which I got stuck while working on this is that the order of rules in your grammar file matters a lot! Treetop applies the rules in the order that you define them. So if you have a low-level rule that will match lots of stuff near the top, once its starts being matched none of the other rules will even run. Therefore you need to have the most general/composite rules at the top and work down towards the more specific rules. No one ever seems to really say that in the blog posts/documentation I looked at though so I'm saying it here.
