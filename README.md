@@ -1,6 +1,6 @@
 ## Treetop Bot Templating
 
-This repo is an in-process bot I'm working on that's not good yet but is about sticking computer graphics jaron into imagistic poetry.
+This repo is an in-process bot I'm working on that's not good yet but is about sticking computer graphics jargon into imagistic poetry.
 
 It's also a project I'm using to learn about Treetop, the Ruby Parser Expression Grammar (PEG) library. I followed <a href="http://thingsaaronmade.com/blog/a-quick-intro-to-writing-a-parser-using-treetop.html">this excellent blog post</a> to get started.
 
