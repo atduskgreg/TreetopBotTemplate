@@ -16,7 +16,7 @@ Mark it up with parts of speech like so:
 
 Where I've marked out the words I might want to replace with their part of speech and their original value.
 
-And then be able to swap in a word from my jaron lists with the appropraite POS to end up with something like this:
+And then be able to swap in a word from my jargon lists with the appropraite POS to end up with something like this:
 
      Reflectance, radiance against the detection of the luma.
 
